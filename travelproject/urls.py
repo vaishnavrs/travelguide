@@ -23,6 +23,7 @@ from travelproject import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('travelapp.urls')),
+    path('credentials/',include('credentials.urls'))
 ]
 
 if settings.DEBUG:
